@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.2.7)  7 FEB 2019 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.2.7)  4 APR 2019 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,7 +1018,7 @@ Package microtype Info: Loading generic settings for font family
 <utfpr.jpeg, id=1, 97.36375pt x 35.13126pt>
 File: utfpr.jpeg Graphic file (type jpg)
  <use utfpr.jpeg>
-Package pdftex.def Info: utfpr.jpeg used on input line 143.
+Package pdftex.def Info: utfpr.jpeg used on input line 141.
 (pdftex.def)             Requested size: 97.3635pt x 35.13115pt.
  [1
 
@@ -1030,10 +1030,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 151.
+ne 149.
 
-Package tocbasic Info: character protrusion at lof deactivated on input line 15
-1.
+Package tocbasic Info: character protrusion at lof deactivated on input line 14
+9.
 (./modelo_projeto.lof
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1052,33 +1052,19 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@lof=\write3
 \openout3 = `modelo_projeto.lof'.
 
-
-
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 154.
-
-Package tocbasic Info: character protrusion at lot deactivated on input line 15
-4.
-(./modelo_projeto.lot)
-\tf@lot=\write4
-\openout4 = `modelo_projeto.lot'.
-
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 159.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 159.
-[2
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+ [2
 
 ]
 
@@ -1087,94 +1073,81 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 161.
+ne 158.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 16
-1.
+Package tocbasic Info: character protrusion at toc deactivated on input line 15
+8.
 (./modelo_projeto.toc)
-\tf@toc=\write5
-\openout5 = `modelo_projeto.toc'.
+\tf@toc=\write4
+\openout4 = `modelo_projeto.toc'.
 
  [3
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
  [4
 
-] (./tab1.tex
-<fig1.png, id=27, 608.2725pt x 423.5825pt>
-File: fig1.png Graphic file (type png)
- <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 8.
-(pdftex.def)             Requested size: 121.65234pt x 84.715pt.
-File: fig1.png Graphic file (type png)
- <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 9.
-(pdftex.def)             Requested size: 121.65234pt x 84.715pt.
-)
-[5 <./fig1.png>]
-Overfull \hbox (84.47485pt too wide) in paragraph at lines 250--255
-[]\OT1/cmr/m/n/12 (-20) Segue uma rela^^Xc~ao de fer-ra-men-tas: http://asana.c
-om/, https://trello.com/, http://www.ganttproject.biz/,
- []
+] [5] <planta.png, id=30, 661.47125pt x 401.5pt>
+File: planta.png Graphic file (type png)
 
-[6] (./modelo_projeto.bbl
+<use planta.png>
+Package pdftex.def Info: planta.png used on input line 246.
+(pdftex.def)             Requested size: 396.8858pt x 240.90184pt.
+ <index.jpeg, id=31, 146.5475pt x 189.70876pt>
+File: index.jpeg Graphic file (type jpg)
 
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 1.
+<use index.jpeg>
+Package pdftex.def Info: index.jpeg used on input line 253.
+(pdftex.def)             Requested size: 87.92915pt x 113.82613pt.
+ [6 <./planta.png (PNG copy)> <./index.jpeg>]
+<tab.png, id=37, 600.2425pt x 92.345pt>
+File: tab.png Graphic file (type png)
+ <use tab.png>
+Package pdftex.def Info: tab.png used on input line 265.
+(pdftex.def)             Requested size: 360.14827pt x 55.40741pt.
 
-) [7] (./tab2.tex)
-File: fig1.png Graphic file (type png)
- <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 334.
-(pdftex.def)             Requested size: 455.24417pt x 317.02682pt.
- <fig2.png, id=43, 214.8025pt x 516.93124pt>
-File: fig2.png Graphic file (type png)
+<crono.png, id=38, 612.2875pt x 193.72375pt>
+File: crono.png Graphic file (type png)
+ <use crono.png>
+Package pdftex.def Info: crono.png used on input line 276.
+(pdftex.def)             Requested size: 367.37534pt x 116.23514pt.
+ [7 <./tab.png (PNG copy)> <./crono.png (PNG copy)>] <orac.png, id=43, 595.2237
+5pt x 215.80624pt>
+File: orac.png Graphic file (type png)
 
-<use fig2.png>
-Package pdftex.def Info: fig2.png used on input line 342.
-(pdftex.def)             Requested size: 214.80197pt x 516.92998pt.
- <fig3.jpg, id=44, 533.5935pt x 361.35pt>
-File: fig3.jpg Graphic file (type jpg)
- <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg used on input line 351.
-(pdftex.def)             Requested size: 672.24995pt x 455.24417pt.
-
-
+<use orac.png>
+Package pdftex.def Info: orac.png used on input line 298.
+(pdftex.def)             Requested size: 357.13701pt x 129.48474pt.
+ 
 AED: lastpage setting LastPage
-[8] [9] [10 <./fig2.png>] [11 <./fig3.jpg>] (./modelo_projeto.aux) ) 
+[8 <./orac.png>] (./modelo_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 11084 strings out of 494929
- 170819 string characters out of 6180143
- 459690 words of memory out of 5000000
- 14058 multiletter control sequences out of 15000+600000
- 26987 words of font info for 99 fonts, out of 8000000 for 9000
+ 11057 strings out of 494929
+ 170309 string characters out of 6180143
+ 459654 words of memory out of 5000000
+ 14039 multiletter control sequences out of 15000+600000
+ 25332 words of font info for 99 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 54i,13n,77p,1020b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share
-/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssb
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_projeto.pdf (11 pages, 1926968 bytes).
+ 54i,12n,77p,1020b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/e
+nc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
+lvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+o8a.pfb>
+Output written on modelo_projeto.pdf (8 pages, 204581 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 29205 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 28703 words of extra memory for PDF output out of 29859 (max. 10000000)
 

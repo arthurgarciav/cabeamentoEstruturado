@@ -60,7 +60,7 @@
 %% ====================================
 %% ====================================
 
-\lfoot{\footnotesize \texttt{Cabeamento estruturado} \textbullet ~Modelo de projeto}
+\lfoot{\footnotesize \texttt{cabeamento estruturado} \textbullet ~Modelo de projeto}
 
 
 \cfoot{}
@@ -96,7 +96,7 @@
 %% ====================================
 %% ====================================
 
-\title{Modelo para Projeto de cabeamento estruturado}					% Title of your article goes here
+\title{Projeto de cabeamento estruturado - Empresa FourBR}					% Title of your article goes here
 
 %% ====================================
 
@@ -106,7 +106,7 @@
 
 \preauthor{\begin{flushleft}
 					\large \lineskip 0.5em \usefont{OT1}{phv}{b}{sl} \color{DarkRed}}
-\author{Alexandre L'Erario, Fulano de Tal }  	% Author name goes here
+\author{Arthur Garcia Vianna }  	% Author name goes here
 
 
 \postauthor{\footnotesize \usefont{OT1}{phv}{m}{sl} \color{Black} 
@@ -133,9 +133,7 @@
 %% mude o resumo  do projeto
 %% ====================================
 %% ====================================
-\initial{E}\textbf{ste modelo exemplifica como um projeto de cabeamento estruturado deve ser elaborado. No projeto real,
-	esta seção deve indicar qual seria o propósito do projeto: reestruturar, criar uma estrura sem uma anterior, apresentar uma estrutura ficticia ou real  etc. Deve também conter sua cobertura (quais elementos este projeto aborda): Levantamento da planta física, Elaboração da planta lógica, Equipamentos passivos da rede (memorial descritivo), Levantamento de quantidade/custo, Plano de Certificação e orçamento.
-	No caso de projetos reais, deve conter também o escopo. No projeto real deve conter quais as atividades serão executadas e quais os responsáveis. Deve apresentar também as restrições que serão cumpridas e um possível acordo de nível de serviço (SLA).}
+\initial{N}\textbf{este projeto será detalhado todo o processo de cabeamento estruturado que será desenvolvido para a empresa FourBR, uma empresa nacional de marketing digital de pequeno porte, que atualmente possui sua rede de computadores executada de maneira extremamente obsoleta e não-funcional. Através deste projeto todos os pontos de rede serão conectados de maneira eficiente garantindo assim o compartilhamento eficaz de dados com segurança.}
 
 %% ====================================
 \begin{figure}
@@ -150,8 +148,7 @@
     \renewcommand*\listfigurename{Lista de figuras}
 \listoffigures
 
-\renewcommand*\listtablename{Lista de tabelas}
-\listoftables
+
 
 
 
@@ -167,191 +164,153 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
-
-Indique também nesta seção o escopo do projeto.
-
-Apresente um overview do parque tecnológico do caso.
+A empresa FourBR dispõe no momento de 15 notebooks, em um escritório de 60 metros quadrados, conectados entre si através de um hub que é ligado diretamente em um roteador ADSL.
+Não existe acesso a internet através de wireless e a colisão de dados é enorme devido à conexão realizada através de um hub, que por si só possui apenas um domínio de colisão e funciona no modelo half-duplex.
+Serão instalados um roteador, um switch e um firewall de boa qualidade para garantir um fluxo de dados eficiente na rede, além de toda a parte de cabeamento estruturado e certificação dos cabos e pontos de rede.
+Serão também projetados planos de contenção em caso de falhas e manutenções periódicas.
 \subsection{Benefícios}
-Explique quais seriam os benefícios provenientes após a execução deste projeto.
+Alguns dos benefícios deste projeto seriam a comunicação fluida entre os usuários da rede interna e externa, extermínio de colisão de dados na rede, acesso cabeado e sem fio a rede, além da estabilidade e segurança da rede, garantindo assim que o foco principal da empresa, o marketing digital, seja realizado de maneira eficiente e sem problemas.
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+A empresa ConsultPW cuidará de toda a parte do projeto, desde o orçamento até a implementação dos dispositivos e da arquitetura. A empresa de TI conta com 3 equipes sendo elas:
 
-Sugestão: crie uma tabela contento a relação delas.
-
+\begin{itemize}
+\item Financeira
+\item Projeto
+\item Técnica
+\end{itemize}
 
 
 \section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+Rede extremamente instável e com muito travamento devido principalmente aos seguintes fatores:
 
-Caso tenha rede, deixe claro:
 \begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
+	\item Utilização de hub
+	\item Roteador simples de uso doméstico
+	\item Cabeamento mal realizado, com falhas e torções
+	\item Cabos CAT5E
+	\item Inexistência de racks ou sala de servidores e dispositivos
+	\item Model ADSL de baixo desempenho
+	\item Hub de 16 portas
+	
 \end{itemize}
 
 \section{Requisitos}
-Crie uma enumeração dos requisitos do projeto.
+Será necessário que o ambiente seja desocupado pelo prazo inicial de 4 semanas para que todo o projeto seja desenvolvido, desde a passagem de cabos pelas canaletas até a montagem da topologia física e lógica da rede.
 
 \section{Usuários e Aplicativos}
-Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
+Atualmente a empresa conta com 15 funcionários/usuários que utilizam os end-points e que precisam ter acesso aos recursos da rede de maneira ininterrupta. A empresa tem um plano de crescimento a longo prazo e portanto o projeto abordará esse requisito no momento de definir, planejar e implementar o plano de escalabilidade da rede.
  
 
 \subsection{Usuários}
-Crie uma relação da quantidade, perfil de usuários de seu projeto.
+São 15 usuários que possuem conhecimento em informática de nível baixo ao médio e que utilizam quase que diariamente os mesmos softwares que se enquadram no padrão da empresa, além de softwares mundialmente utilizados para edição e leitura de textos, planilhas e apresentações de slides.
+Destes 15 usuários existem:
+
+\begin{itemize}
+	\item 2 gerentes
+	\item 10 funcionários efetivos
+	\item 3 estagiários
+
+	
+\end{itemize}
 
 \subsection{Aplicativos}
-Crie uma relação dos aplicativos e seus níveis críticos de uso.
+\begin{itemize}
+	\item Microsoft Office 2016
+	\item Adobe Reader
+	\item Adobe Photoshop CS6
+	\item WinRAR
+	\item Google Chrome
+	\item One Drive
+	\item Aplicativos standard da empresa
+	
+	
+\end{itemize}
 
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
-
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
+Atualmente o escritório conta com 60 metros quadrados, sendo estes divididos em 7 ambientes diferentes. Alguns desses ambientes contém funcionários que necessitam do acesso à rede para executar suas funções diárias. A distância entre os pontos de rede vai variar de acordo com o ambiente, sendo que a planta do escritório irá descrever com maiores detalhes o planejamento do processo.
 
 \section{Planta Lógica - Elementos estruturados}
 
-\subsection{Estado atual}
-Deve ter a planta atual, se for o caso
+
 
 \subsection{Topologia}
-Proposta futura, proposta após implantação.
-Deve conter o diagrama da rede. Atente-se a redundância  e ligações truncadas.
-Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
 
-Todos os elementos das figuras devem ser explicados. 
-Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
+Serão utilizados 20 metros de cabo UTP categoria 6 (Cat6) para realizar toda a intregração dos end-points e dos dispositivos de rede mostrados na Figura 1. Os cabos serão passados através de canaletas implementadas diretamente na parede seguindo o padrão de cabeamento horizontal. Os dispostivos de rede, sendo eles, um pacth panel, um switch de 24 portas, um roteador empresarial e um firewall ficam na sala de rack. Um access point de alto alcance ficará localizado exatamento no meio do escritório entre a sala de funcionários e a sala do gerente 2. Serão instaladas também 15 tomadas com entrada RJ-45 fêmea para que os usuários possam se conectar a rede ethernet. Todos os cabos serão crimpados utilizando a norma T-568A.
 
-\input{tab1}
+\begin{figure}[h]
+	\centering
+	\flushright
+	\includegraphics[scale=0.6]{planta}
+	\caption{Planta do projeto a ser implementado.}
+	\label{fplanta}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{index}
+	\caption{Padrão de crimpagem dos cabos UTP.}
+	\label{T658A}
+\end{figure}
 
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+Os cabos serão encaminhado através de 25 metros de eletrodutos fixados nas paredes do escritório.
 
 \subsection{Memorial descritivo}
 
-Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{tab}
+	\caption{Tabela de passivos de rede.}
+	\label{tab}
+\end{figure}
 
 \subsection{Identificação dos cabos}
-Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
+Todos os cabos serão rotulados através de fitas adesivas de cores diferentes que indicarão o tipo de dispositivo que está sendo conectado e o número das conexões nas portas do switch.
 
 \section{Implantação}
-Estabeleça um cronograma de implantação:
-Remoção de equipamentos existentes (destino para descarte), instalação dos condutores, instalação dos cabos, 
-identificação dos cabos, montagem dos racks, certificação, etc... Crie atividades e estabeleça o tempo de execução. Se for um projeto real, indique também quais os responsáveis pela execução do projeto e de cada uma das etapas.
-
-Defina marcas (e padrões) e fornecedores se for o caso. Atenção a contratados e subcontratados para a realização das atividades. Estabeleça a responsabilidade de execução da atividade e também da validação dela.
-
-Utilize algum software para gerear o cronograma. Excel,etc. O fundamental é dividir em etapas, descrever e estimar o tempo de cada uma delas.
-
-Segue uma relação de ferramentas:
-http://asana.com/, 
-https://trello.com/, 
-http://www.ganttproject.biz/, 
-http://www.orangescrum.org/. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{crono}
+	\caption{Cronograma do projeto.}
+	\label{crono}
+\end{figure} 
 
 \section{Plano de certificação}
-Quais seriam as etapas para a certificação? 
-Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
-Como os testes seriam executados?
-Quais relatórios de certificação serão (ou deveriam ser) entregues? 
+A certificação será realizada em toda a rede através do equipamento de certificação Lantek III. Todos os patch cords e patch panels e demais dispostivos da rede. A certificação será realizada no próprio escritório na última semana de projeto, sendo este o último passo a ser realizado. Todo o processo será documentado e entregue aos contratantes por meio de relatórios detalhados da certificação.  
 
 \section{Plano de manutenção}
 
-Revisões periódicas na rede, emissão de certificados para novos pontos.
+Serão realizadas revisões periódicas a 1 vez por ano, sempre no mês de maio, conforme consta em contrato. 
 
 \subsection{Plano de expansão}
-Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede? 
+A empresa pretende aumentar seus pontos de rede no futuro de acordo com o seu crescimento, porém, no momento não existem planos de expansão a curto prazo. Mesmo assim, existem 9 portas não utilizadas no switch, exigindo apenas a instalação de mais tomadas com conectores RJ-45 fêmea.  
 
 \section{Risco}
-Enumerar e explicar os riscos do projeto.
+Os riscos são relativamente pequenos levando em consideração que toda a rede será certificada com um nível muito grande de detalhamento, porém em caso de qualquer problema a empresa estará disponível para o mais rápido atendimento. 
 
 \section{Orçamento}
-Crie uma relação de orçamentos baseado na seções anteriores.
+A mão de obra da empresa contratada será discutida com os responsáveis pela FourBR.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{orac}
+	\caption{Orçamento do projeto.}
+	\label{orac}
+\end{figure} 
 
 \section{Recomendações}
-Observações e recomendações para o cliente.
-
-\section{Referências bibliográficas}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{t2013} é considerada..... Já \cite{kurose2010} apresenta uma versão...
-
-Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
+Os usuários serão devidamente treinados para manusear seus equipamentos da maneira correta, mantendo assim a funcionalidade da rede. Instalações, manutenções ou reparos na rede são expressamente proibidos quando não realizados por funcionários qualificados de nossa empresa.
 
 
-\renewcommand\refname{} %%Referências bibliográficas}  
-\bibliographystyle{ieeetr}
-\bibliography{referencias}  
+
 
 %% ***********************************************************************
 %% === remover daqui =====================================================
 %% ***********************************************************************
-=================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
 
 
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
-\begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{itemize}
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
 
 
 %% ***********************************************************************
